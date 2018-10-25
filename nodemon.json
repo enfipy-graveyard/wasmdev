@@ -1,5 +1,5 @@
 {
   "watch": ["src"],
   "delay": "3",
-  "exec": "yarn build && yarn start"
+  "exec": "yarn build && copy public/index.html dist/ && yarn start"
 }
