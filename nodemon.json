@@ -2,7 +2,7 @@
   "watch": ["src"],
   "ext": "cpp",
   "events": {
-    "start": "rm -rf dist && cp public/index.html dist/"
+    "start": "cp public/index.html dist/"
   },
   "exec": "yarn build && yarn start"
 }

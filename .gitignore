@@ -74,4 +74,5 @@ typings/
 .serverless
 
 # Dist folder with generated wasm
-dist
+dist/*
+!*.gitkeep
