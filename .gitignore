@@ -76,3 +76,6 @@ typings/
 # Dist folder with generated wasm
 dist/*
 !*.gitkeep
+
+# Remove all .DS_Store
+.DS_Store
