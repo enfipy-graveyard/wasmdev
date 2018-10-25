@@ -1,5 +1,8 @@
 {
   "watch": ["src"],
-  "delay": "5",
-  "exec": "yarn run build && yarn run copy && yarn run start"
+  "ext": "cpp",
+  "events": {
+    "start": "yarn run copy"
+  },
+  "exec": "yarn run build && yarn run start"
 }
