@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "start": "emrun dist/index.html --no_browser",
-    "build": "emcc --emrun src/main.cpp -s WASM=1 -s USE_SDL=2 -O3 -o dist/main.js"
+    "start": "emrun --no_browser --port 8080 dist/index.html",
+    "build": "emcc --emrun src/main.cpp src/Game.cpp src/InputManager.cpp -s WASM=1 -s USE_SDL=2 -O3 -o dist/main.js"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
